@@ -47,8 +47,8 @@ body {
 }
 
 .keyboard__key {
-    height: 45px;
-    width: 6%;
+    height: 40px;
+    width: 5%;
     max-width: 90px;
     border-radius: 4px;
     margin: 3px;

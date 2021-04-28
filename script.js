@@ -44,12 +44,11 @@ const Keyboard = {
     _createKeys() {
         const fragment = document.createDocumentFragment();
         const keyLayout = [
-            "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "backspace",
-            "қ", "ў", "ә", "ғ", "ө","ң", "ү", "ҳ","ё", "у", "й", "о", "п",
-            "а", "с", "и", "ф", "р", "л", "x","д", "н", "г", "ш", "ъ",
-            "caps", "е", "ж", "б", "ц", "к", "ы", "м", "ч", "э", "enter",
-            "done", "я", "т", "в", "з", "щ", "ь", "ю", ",", ".", "?",
-            "space"
+            "!", "@", "№","1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "(", ")", "backspace",
+            "қ", "ў", "ә", "ғ", "ө","ң", "ү", "ҳ","ё", "у", "й", "о", "п", "р", "л", "x" ,"д",
+            "caps", "а", "с", "и", "ф", "е", "ж", "б", "ц", "к", "ы", "м", "ч", "э", "«", "»", "enter",
+            "done", "я", "т", "в", "з", "щ", "ь", "ю", "н", "г", "ш", "ъ",",", ".", "?", "-",
+            "—", ":", "space", "§", ";"
         ];
         //Creating HTML for icon
         const createIconHTML = (icon_name) => {
@@ -58,7 +57,7 @@ const Keyboard = {
         
         keyLayout.forEach(key => {
             const keyElement = document.createElement('button');
-            const insertLineBreak = ['backspace', 'п', 'ъ', 'enter', '?'].indexOf(key) !== -1;
+            const insertLineBreak = ['backspace', 'д', 'enter', "-"].indexOf(key) !== -1;
 
             //Adding attributes/classes
             keyElement.setAttribute('type', 'button');
